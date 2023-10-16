@@ -1,0 +1,47 @@
+{
+  "name": "@nexisltd/country",
+  "version": "0.0.1",
+  "description": "An utility package to deal with countries",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
+  },
+  "keywords": [
+    "date-translator",
+    "date-to-word-translator",
+    "date2word",
+    "date-to-word"
+  ],
+  "author": "Team Nexis",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.8.6",
+    "@types/number-to-words": "^1.2.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexisltd/country.git"
+  },
+  "homepage": "https://github.com/nexisltd/country#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/nexisltd/country/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
