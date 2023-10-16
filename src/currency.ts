@@ -13,5 +13,6 @@ export const currency = (identifier: string) => {
     const country = countryArray.find(
         (country) => country.code === identifier || country.name === identifier
     );
+    if (!country) return null;
     return { name: country?.name, currency: country?.currency };
 };

@@ -12,5 +12,8 @@ export const flag = (identifier: string) => {
     const country = countryArray.find(
         (country) => country.code === identifier || country.name === identifier
     );
+    if (!country) {
+        return null;
+    }
     return { name: country?.name, flag: country?.flag };
 };
