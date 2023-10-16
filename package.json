@@ -1,6 +1,6 @@
 {
   "name": "@nexisltd/country",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An utility package to deal with countries",
   "private": false,
   "main": "dist/index.js",
