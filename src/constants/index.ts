@@ -1225,4 +1225,4 @@ export const countryArray = [
         currency: "ZWD",
         tz: ["Africa/Harare", "Africa/Maputo"],
     },
-] as const;
+]

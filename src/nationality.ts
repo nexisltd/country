@@ -1,9 +1,8 @@
 import { countryArray } from "./constants";
-import { Country } from "./types";
 
-export const findNationality = (countryName: Country | string) => {
+export const findNationality = (identifier: string) => {
     const foundCountry = countryArray.find(
-        (countryObj) => countryObj.name === countryName
+        (country) => country.name === identifier || country.code === identifier
     );
     if (foundCountry) {
         return foundCountry.nationality;
